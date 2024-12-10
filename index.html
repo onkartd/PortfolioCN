@@ -53,43 +53,31 @@
     </header>
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <p class="text-gray-700 mb-4">
-                        I'm a passionate engineering student specializing in [Your Discipline] with a keen interest in innovative technological solutions. My academic journey has been driven by curiosity, problem-solving, and a desire to create impactful technologies.
-                    </p>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div>
-                            <h3 class="font-bold">Education</h3>
-                            <p>B.Tech in [Your Branch]<br>[College Name]</p>
-                        </div>
-                        <div>
-                            <h3 class="font-bold">Interests</h3>
-                            <p>Machine Learning<br>Web Development<br>IoT</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-3 gap-4">
-                    <div class="bg-purple-100 p-6 text-center rounded-lg">
-                        <i class="fas fa-code text-4xl text-purple-600 mb-2"></i>
-                        <p>Coding</p>
-                    </div>
-                    <div class="bg-purple-100 p-6 text-center rounded-lg">
-                        <i class="fas fa-project-diagram text-4xl text-purple-600 mb-2"></i>
-                        <p>Design</p>
-                    </div>
-                    <div class="bg-purple-100 p-6 text-center rounded-lg">
-                        <i class="fas fa-globe text-4xl text-purple-600 mb-2"></i>
-                        <p>Innovation</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+<section id="about">
+  <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+  <div class="container mx-auto px-4">
+    <p>I'm a passionate engineering student specializing in Computer Science and Engineering (AIML) with a keen interest in innovative technological solutions. My academic journey has been driven by curiosity, problem-solving, and a desire to create impactful technologies.</p>
+    <div class="grid md:grid-cols-2 gap-8 items-center mt-8">
+      <div>
+        <h3 class="font-bold">Education</h3>
+        <p>Bachelor of Technology - Computer Science and Engineering (AIML)<br>
+        Vishwakarma Institute of Technology, Pune<br>
+        CGPA (Upto 4 Semesters): 8.54</p>
+        <p>SSC 2020<br>
+        Jawahar Navodaya Vidyalaya, Nashik<br>
+        Percentage: 91.40%</p>
+      </div>
+      <div>
+        <h3 class="font-bold">Interests</h3>
+        <ul class="list-disc pl-6">
+          <li>Machine Learning</li>
+          <li>Web Development</li>
+          <li>IoT</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
     <!-- Skills Section -->
         <section id="skills" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
@@ -142,15 +130,18 @@
         </div>
     </section>
 
-    <!-- Updated Projects Section -->
+<!-- Projects Section -->
     <section id="projects" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Projects</h2>
             <div class="grid md:grid-cols-3 gap-6">
                 <!-- Virtual Violin Tutor -->
                 <div class="project-card bg-gray-100 p-6 rounded-lg shadow">
-                    <h3 class="font-bold text-xl mb-2">Virtual Violin Tutor</h3>
-                    <p class="text-gray-600 mb-4">AI-powered violin learning platform using computer vision and audio processing.</p>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-music text-purple-600 text-4xl mr-4"></i>
+                        <h3 class="font-bold text-xl">Virtual Violin Tutor</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">AI-powered violin learning platform using computer vision and audio processing for personalized music education.</p>
                     <div class="mb-4">
                         <span class="bg-purple-100 text-purple-800 text-sm px-2 py-1 rounded mr-2">Python</span>
                         <span class="bg-purple-100 text-purple-800 text-sm px-2 py-1 rounded mr-2">Flask</span>
@@ -164,8 +155,11 @@
 
                 <!-- Instagram Clone -->
                 <div class="project-card bg-gray-100 p-6 rounded-lg shadow">
-                    <h3 class="font-bold text-xl mb-2">Instagram Clone</h3>
-                    <p class="text-gray-600 mb-4">Full-featured social media app with real-time data management and user interactions.</p>
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-instagram text-pink-600 text-4xl mr-4"></i>
+                        <h3 class="font-bold text-xl">Instagram Clone</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Full-featured social media app with real-time data management, user interactions, and responsive design.</p>
                     <div class="mb-4">
                         <span class="bg-purple-100 text-purple-800 text-sm px-2 py-1 rounded mr-2">React.js</span>
                         <span class="bg-purple-100 text-purple-800 text-sm px-2 py-1 rounded mr-2">Firebase</span>
@@ -177,10 +171,31 @@
                     </div>
                 </div>
 
+                <!-- CarEase -->
+                <div class="project-card bg-gray-100 p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-car text-blue-600 text-4xl mr-4"></i>
+                        <h3 class="font-bold text-xl">CarEase</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Comprehensive car management system with admin interface, advanced search, and booking request management.</p>
+                    <div class="mb-4">
+                        <span class="bg-purple-100 text-purple-800 text-sm px-2 py-1 rounded mr-2">MySQL</span>
+                        <span class="bg-purple-100 text-purple-800 text-sm px-2 py-1 rounded mr-2">PHP</span>
+                        <span class="bg-purple-100 text-purple-800 text-sm px-2 py-1 rounded">JavaScript</span>
+                    </div>
+                    <div class="flex space-x-2">
+                        <a href="#" class="bg-purple-600 text-white px-4 py-2 rounded">View Project</a>
+                        <a href="#" class="border border-purple-600 text-purple-600 px-4 py-2 rounded">GitHub</a>
+                    </div>
+                </div>
+
                 <!-- PrepMate -->
                 <div class="project-card bg-gray-100 p-6 rounded-lg shadow">
-                    <h3 class="font-bold text-xl mb-2">PrepMate</h3>
-                    <p class="text-gray-600 mb-4">AI-driven interview preparation app with real-time feedback and mock interview generation.</p>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-graduation-cap text-green-600 text-4xl mr-4"></i>
+                        <h3 class="font-bold text-xl">PrepMate</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">AI-driven interview preparation app with real-time feedback, mock interview generation, and interactive learning tools.</p>
                     <div class="mb-4">
                         <span class="bg-purple-100 text-purple-800 text-sm px-2 py-1 rounded mr-2">Next.js</span>
                         <span class="bg-purple-100 text-purple-800 text-sm px-2 py-1 rounded mr-2">PostgreSQL</span>
@@ -195,22 +210,48 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="gradient-bg text-white py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Contact Me</h2>
-            <div class="max-w-lg mx-auto">
-                <form id="contactForm" class="space-y-4">
-                    <input type="text" placeholder="Your Name" required class="w-full p-3 rounded bg-white/20 placeholder-white/70">
-                    <input type="email" placeholder="Your Email" required class="w-full p-3 rounded bg-white/20 placeholder-white/70">
-                    <textarea placeholder="Your Message" required class="w-full p-3 rounded bg-white/20 placeholder-white/70" rows="5"></textarea>
-                    <button type="submit" class="w-full bg-white text-purple-600 p-3 rounded-full hover:bg-purple-100">
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
+<section id="contact" class="gradient-bg text-white py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Contact Me</h2>
+    <div class="max-w-lg mx-auto">
+      <form id="contactForm" action="https://formspree.io/f/xovqznvq" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded bg-white/20 placeholder-white/70">
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded bg-white/20 placeholder-white/70">
+        <textarea name="message" placeholder="Your Message" required class="w-full p-3 rounded bg-white/20 placeholder-white/70" rows="5"></textarea>
+        <button type="submit" class="w-full bg-white text-purple-600 p-3 rounded-full hover:bg-purple-100">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var nameInput = document.getElementById('nameInput');
+    var emailInput = document.getElementById('emailInput');
+    var messageInput = document.getElementById('messageInput');
+
+    // Perform form validation
+    if (nameInput.value.trim() === '' || emailInput.value.trim() === '' || messageInput.value.trim() === '') {
+      alert('Please fill in all the required fields.');
+      return;
+    }
+
+    // Submit the form to Formspree
+    this.submit();
+
+    // Display success message
+    alert('Thank you for your message! I will get back to you soon.');
+
+    // Clear the form fields
+    nameInput.value = '';
+    emailInput.value = '';
+    messageInput.value = '';
+  });
+</script>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-8">
